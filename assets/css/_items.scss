@@ -675,6 +675,27 @@ Version: 1.0
             }
         }
     }
+    .text-danger{
+        color: #EC1C24;
+    }
+    .text-black{
+        color: #000;
+    }
+    .price-text{
+        .h2{
+            font-size: 27px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        del{
+            color: #000;
+        }
+        del,
+        span{
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    }
 }
 .box{
     border: 1px solid #D0D2D3;
@@ -700,10 +721,117 @@ Version: 1.0
     }
     .box-body{
         padding: 10px 18px;
+        color: #989897;
+        font-size: 13px;
+    }
+    h5{
+        font-family: Arial;
+        color: #656565;
+        span{
+            color: #989897;
+            font-size: 13px;
+        }
+    }
+    .table-striped{
+        border: 1px solid #A6A8AB;
+        font-family: Arial;
+        th{
+            vertical-align: middle;
+            font-weight: normal;
+            color: #989897;
+        }
+        td{
+            color: #656565;
+            vertical-align: middle;
+            a{
+                color: #656565;
+            }
+        }
+        input[type="text"]{
+            border: 1px solid #A6A8AB;
+            padding: 6px 12px;
+            width: 80px;
+            border-radius: 7px;
+        }
+        input[type="checkbox"]{
+            margin: 0 10px 0 0;
+            & + span{
+                display: none;
+            }
+            &:checked + span{
+                display: inline-block;
+            }
+
+        }
+    }
+    .table-striped > tbody > tr:nth-of-type(2n+1){
+        background: #f5f5f5;
     }
 }
 .attachment-row{
     &:before,&:after{
         clear: both;
+    }
+    .attachment{
+        width: 202px;
+        border: 1px solid #D0D2D3;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        float: left;
+    }
+    .attachment-thumb{
+        width: 200px;
+        height: 170px;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .attachment-controls{
+        background: #F5F5F5;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: table;
+            width: 100%;
+        }
+        li{
+            display: table-cell;
+            text-align: center;
+            padding: 2px 7px 4px;
+            &:first-child{
+                text-align: left;
+            }
+            &:last-child{
+                text-align: right;
+            }
+            a{
+                color: #929497;
+                &:hover{
+                    color: #000;
+                }
+                &:hover,&:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .upload-attachment{
+        width: 202px;
+        height: 200px;
+        border: 1px solid #D0D2D3;
+        margin-bottom: 20px;
+        float: left;
+        label{
+            display: block;
+            margin: 0;
+            cursor: pointer;
+        }
+        .img-section{
+            width: 100%;
+            height: 170px;
+            background: url(../images/upload.png) no-repeat center center #26A9E0;
+        }
     }
 }

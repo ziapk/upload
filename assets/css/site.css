@@ -1022,6 +1022,7 @@ hr {
 .btn-xlg {
   font-size: 24px;
   padding: 22px 30px;
+  min-width: 170px;
 }
 
 /* footer section */
@@ -3473,6 +3474,25 @@ Version: 1.0
   background: #26A9E0;
   color: #fff;
 }
+.listing-page-content .text-danger {
+  color: #EC1C24;
+}
+.listing-page-content .text-black {
+  color: #000;
+}
+.listing-page-content .price-text .h2 {
+  font-size: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.listing-page-content .price-text del {
+  color: #000;
+}
+.listing-page-content .price-text del,
+.listing-page-content .price-text span {
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
 .box {
   border: 1px solid #D0D2D3;
@@ -3501,10 +3521,116 @@ Version: 1.0
 }
 .box .box-body {
   padding: 10px 18px;
+  color: #989897;
+  font-size: 13px;
+}
+.box h5 {
+  font-family: Arial;
+  color: #656565;
+}
+.box h5 span {
+  color: #989897;
+  font-size: 13px;
+}
+.box .table-striped {
+  border: 1px solid #A6A8AB;
+  font-family: Arial;
+}
+.box .table-striped th {
+  vertical-align: middle;
+  font-weight: normal;
+  color: #989897;
+}
+.box .table-striped td {
+  color: #656565;
+  vertical-align: middle;
+}
+.box .table-striped td a {
+  color: #656565;
+}
+.box .table-striped input[type="text"] {
+  border: 1px solid #A6A8AB;
+  padding: 6px 12px;
+  width: 80px;
+  border-radius: 7px;
+}
+.box .table-striped input[type="checkbox"] {
+  margin: 0 10px 0 0;
+}
+.box .table-striped input[type="checkbox"] + span {
+  display: none;
+}
+.box .table-striped input[type="checkbox"]:checked + span {
+  display: inline-block;
+}
+.box .table-striped > tbody > tr:nth-of-type(2n+1) {
+  background: #f5f5f5;
 }
 
 .attachment-row:before, .attachment-row:after {
   clear: both;
+}
+.attachment-row .attachment {
+  width: 202px;
+  border: 1px solid #D0D2D3;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  float: left;
+}
+.attachment-row .attachment-thumb {
+  width: 200px;
+  height: 170px;
+}
+.attachment-row .attachment-thumb img {
+  max-width: 100%;
+  height: auto;
+}
+.attachment-row .attachment-controls {
+  background: #F5F5F5;
+}
+.attachment-row .attachment-controls ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+}
+.attachment-row .attachment-controls li {
+  display: table-cell;
+  text-align: center;
+  padding: 2px 7px 4px;
+}
+.attachment-row .attachment-controls li:first-child {
+  text-align: left;
+}
+.attachment-row .attachment-controls li:last-child {
+  text-align: right;
+}
+.attachment-row .attachment-controls li a {
+  color: #929497;
+}
+.attachment-row .attachment-controls li a:hover {
+  color: #000;
+}
+.attachment-row .attachment-controls li a:hover, .attachment-row .attachment-controls li a:focus {
+  text-decoration: none;
+}
+.attachment-row .upload-attachment {
+  width: 202px;
+  height: 200px;
+  border: 1px solid #D0D2D3;
+  margin-bottom: 20px;
+  float: left;
+}
+.attachment-row .upload-attachment label {
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+.attachment-row .upload-attachment .img-section {
+  width: 100%;
+  height: 170px;
+  background: url(../images/upload.png) no-repeat center center #26a9e0;
 }
 
 /*
@@ -5658,17 +5784,24 @@ tr.highlight td, tr.unread.highlight td {
 .form-section .form-control.error {
   border-color: #BE1E2D;
 }
+.form-section textarea.form-control {
+  height: auto;
+}
 .form-section label.error {
   color: #BE1E2D;
   display: block;
 }
 .form-section .form-group {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .form-section .checkbox-label {
   min-width: 180px;
   margin-right: 20px;
   display: inline-block;
+}
+.form-section .btn-grey {
+  color: #fff;
+  background: #B2B2B2;
 }
 
 .continue-btn {
