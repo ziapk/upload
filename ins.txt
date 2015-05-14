@@ -1,0 +1,21 @@
+Hi, I think I have included too many files or not explained enough the requirements.
+
+There are 5 new templates and 2 updated to templates that your designer did earlier.
+
+On the AI file Loubilou_Shopping_Basket, there are 2 templates to do.  I do not have Illustrator so I have highlighted them on the attached PNG file.
+
+On the AI file Loubilou_register there is 1 new template, however this template shows how form elements should be implemented with validation.
+
+On the AI file Loubilou_sign_in there is 1 simple new template. 
+
+On the AI file Loubilou_Listing_Page there is 1 new template.  This is the complex one with the image editor.
+
+On the AI file MI_nav_options there is updates to the navigation already done including a design for the dropdown menu.
+
+On the AI file Loubilou_search_thumbs_page_April there is updates to the search results already done. The main change here is to move the filtering controls to the left side of the page.  We have also provided how the page should respond on smaller screens - something you said was missing last time and your designer had to guess.
+
+I have removed 2 templates that your designer does not need to do.
+
+I have updated the requirement file and AI files.  Also attached is the SCSS & HTML files for the existing templates.  The designer should extend on these with the new work.
+
+I hope this is clearer now.

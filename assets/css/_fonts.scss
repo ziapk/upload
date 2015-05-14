@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Bountifl';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bountifl'), local('Bountifl'),url(../fonts/bountifl/Bountifl.woff) format('woff');
+}
+@font-face {
+    font-family: 'banda regular';
+    src: url('../fonts/banda-regular/regular-webfont.eot');
+    src: url('../fonts/banda-regular/regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/banda-regular/regular-webfont.woff2') format('woff2'),
+         url('../fonts/banda-regular/regular-webfont.woff') format('woff'),
+         url('../fonts/banda-regular/regular-webfont.ttf') format('truetype'),
+         url('../fonts/banda-regular/regular-webfont.svg#banda_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

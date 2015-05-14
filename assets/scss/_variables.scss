@@ -1,0 +1,38 @@
+
+// all in one
+@mixin css3($prop, $value){
+	-webkit-#{$prop} : $value;
+	-moz-#{$prop} : $value;
+	-ms-#{$prop} : $value;
+	-o-#{$prop} : $value;
+	-webkit-#{$prop} : $value;
+}
+@mixin screen($max, $width){
+	@media (#{$max}-width : $width){
+		@content;
+	}
+}
+// theme colors/fonts
+$bountifl		: 'Bountifl';
+$opensans 		: 'Open Sans', sans-serif;
+$brandaregular 	:  'banda regular';
+
+$baseFamily		: $opensans;
+
+
+//border color 
+$borderColor : #919295;
+
+// bannner 
+$bannerbg : #F7F9F9;
+$rotatingBanner : #d9e7ed;
+$productsWrap 	: #F5F5F5;
+
+// color 
+$themeColor : #1B75BB;
+$textColor : #6D6E70;
+
+
+$green : #009345;
+$green : #8AC440; // updated
+
