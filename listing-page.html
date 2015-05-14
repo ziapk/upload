@@ -375,7 +375,7 @@
                   </div>
                   </label>
               </div>
-              <p><label><input type="file" class="hidden"><button class="btn btn-default btn-lg">Adjust Thumbnail</button> &nbsp;&nbsp;&nbsp;&nbsp; <span class="attachment-text">Update how the primary image thumbnail appears across </span></label></p>
+              <p><label><button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal" >Adjust Thumbnail</button> &nbsp;&nbsp;&nbsp;&nbsp; <span class="attachment-text">Update how the primary image thumbnail appears across </span></label></p>
             </div>
           </div><!-- box -->
           <div class="box">
@@ -809,6 +809,41 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+    <div class="modal images-adjustment fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4>Adjust Thumbnail</h4>
+            <p>Add at least one photo. Use all five photos to show off your items finest features <br> Use high quality JPG, PNG or GIF files that are at least 570px wide (we recommend 1000px). </p>
+            <br>
+            <div class="product">
+              <div class="product-head">
+                <p><a href="#" title="">Beautiful fair trade Pebble octopus rattle</a></p>
+                <p>by <a href="#" title="">  Little Lightburners</a></p>
+                <p class="price">£10.00</p>
+              </div>
+              <div class="product-thumb">
+                <img src="assets/images/upload-thumb.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="range-slider-wrap">
+            <div class="range-slider-inner">
+              <a href="#" class="minus"><span class="fa fa-minus"></span></a>
+              <div class="range-slider"></div>
+              <a href="#" class="plus"><span class="fa fa-plus"></span></a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class="btn btn-default">Cancel</a>
+            <a href="#" class="btn btn-theme" data-dismiss="modal">SAVE</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -822,8 +857,6 @@
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.sticky-kit.min.js"></script>
     <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="upload/html5imageupload.js"></script>
-    <script>$('.dropzone').html5imageupload();</script>
     <!-- theme related custom script here.. -->
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
@@ -840,7 +873,24 @@
       $('.cat-list li').on('click',function () {
         $(this).parent().children().removeClass('active');
         $(this).addClass('active');
-      })
+      });
+      var slider = $( ".range-slider" ).slider({
+          min: 0,
+          max: 10,
+      });
+      $('.plus').click(function() {
+        var sliderCurrentValue = $( ".range-slider" ).slider( "option", "value" );
+          slider.slider( "value", sliderCurrentValue + 1 );
+          return false;
+      });
+      $('.minus').click(function() {
+        var sliderCurrentValue = $( ".range-slider" ).slider( "option", "value" );
+          slider.slider( "value", sliderCurrentValue - 1 );
+          return false;
+      });
     });
     </script>
+    <!-- Button trigger modal -->
+    
   </body>
+</html>

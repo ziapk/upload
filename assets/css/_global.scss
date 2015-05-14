@@ -1241,11 +1241,31 @@ hr {
                 font-size: 19px;
             }
         }
+        .product-head{
+            font-size: 14px;
+            .price{
+                font-size: 19px;
+            }
+        }
     }
 
     @media (max-width: 767px) {
         .products > div {
             width: 100%;
+        }
+    }
+    .product-head{
+        font-size: 18px;
+        padding: 10px 13px;
+        p{margin: 0;}
+        .price{ font-size: 24px;}
+    }
+    .product-thumb{
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
         }
     }
 }

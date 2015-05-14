@@ -1854,11 +1854,33 @@ hr {
   .products-wrap .product-details .price {
     font-size: 19px;
   }
+  .products-wrap .product-head {
+    font-size: 14px;
+  }
+  .products-wrap .product-head .price {
+    font-size: 19px;
+  }
 }
 @media (max-width: 767px) {
   .products-wrap .products > div {
     width: 100%;
   }
+}
+.products-wrap .product-head {
+  font-size: 18px;
+  padding: 10px 13px;
+}
+.products-wrap .product-head p {
+  margin: 0;
+}
+.products-wrap .product-head .price {
+  font-size: 24px;
+}
+.products-wrap .product-thumb img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .form-control {
@@ -3631,6 +3653,92 @@ Version: 1.0
   width: 100%;
   height: 170px;
   background: url(../images/upload.png) no-repeat center center #26a9e0;
+}
+
+.images-adjustment {
+  font-family: Arial;
+  font-size: 13px;
+}
+.images-adjustment h4 {
+  font-family: Arial;
+  color: #404041;
+}
+.images-adjustment .modal-body {
+  padding: 20px 25px;
+}
+.images-adjustment .modal-footer {
+  border-top: none;
+}
+.images-adjustment .modal-content {
+  box-shadow: none;
+  border-radius: 0;
+}
+.images-adjustment .product {
+  border: 1px solid #D0D2D3;
+  width: 270px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+.images-adjustment .product-thumb {
+  border-top: 1px solid #D0D2D3;
+}
+.images-adjustment .product-thumb img {
+  max-width: 100%;
+  height: auto;
+}
+.images-adjustment .product-head {
+  font-size: 18px;
+  padding: 10px 13px;
+}
+.images-adjustment .product-head p {
+  margin: 0;
+}
+.images-adjustment .product-head .price {
+  font-size: 24px;
+}
+.images-adjustment .product-thumb {
+  min-height: 210px;
+}
+.images-adjustment .product-thumb img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.images-adjustment .range-slider-wrap {
+  background: #F5F5F5;
+  padding: 35px 25px;
+}
+.images-adjustment .range-slider-wrap .range-slider-inner {
+  width: 265px;
+  margin: 0 auto;
+  position: relative;
+}
+.images-adjustment .range-slider-wrap .plus {
+  left: 100%;
+  margin-left: 20px;
+}
+.images-adjustment .range-slider-wrap .minus {
+  right: 100%;
+  margin-right: 20px;
+}
+.images-adjustment .range-slider-wrap .plus, .images-adjustment .range-slider-wrap .minus {
+  position: absolute;
+  color: #6D6E70;
+  top: -0.6em;
+  font-size: 1.3em;
+}
+.images-adjustment .ui-slider-horizontal {
+  height: 1px;
+  border-bottom: none;
+}
+.images-adjustment .ui-slider .ui-slider-handle {
+  width: 26px;
+  height: 26px;
+  margin-top: -10px;
+  border-radius: 50px;
+  background: #f5f5f5;
+  cursor: pointer;
 }
 
 /*
